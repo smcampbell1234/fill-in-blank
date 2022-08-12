@@ -5,9 +5,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #61dafb;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.header-txt {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.center-box-holder {
+  border: 2px solid #61dafb;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%
+}
+.center-box {
+  font-size: 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px;
+  width: 50%;
+  text-align: center;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+
+}
+.story-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 1px 1px 1px 1px;
+  width: 100px;
+}
+.story-nav:hover {
+  cursor: pointer;
+  font-size: 4rem;
+  color: lightgray;
+}
+#Questioner {
+  width: 75%;
+}
+#Questioner label {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  font-weight: bold;
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+}
+#Questioner input {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  background-color: rgb(132, 131, 131);
+  color: #61dafb;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  display: inline-block;
+  width: 45%;
+}
+
+.input-error {
+  border: 2px solid red !important;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
+
+.generate-story-inner {
+  width: 80%;
+  font-size: 2rem;
+}
+
+footer {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+footer:hover {
+  cursor: pointer;
 }
